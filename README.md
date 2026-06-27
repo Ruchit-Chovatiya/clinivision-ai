@@ -104,7 +104,7 @@ Make sure you have these installed:
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/clinivision-ai.git
+git clone https://github.com/Ruchit-Chovatiya/clinivision-ai.git
 cd clinivision-ai
 ```
 
