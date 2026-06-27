@@ -245,7 +245,7 @@ http://localhost:5173
 
 ## 👥 Team
 
-Built for **[Hackathon Name]** — [Team Name]
+Built for **DataPort Hackathon** — ChristMsAIM
 
 ---
 
