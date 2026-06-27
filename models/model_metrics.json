@@ -1,0 +1,209 @@
+{
+  "model_name": "GradientBoosting",
+  "train_accuracy": 0.96,
+  "train_f1_macro": 0.9654,
+  "cv_note": "CV on balanced oversampled data (90 samples). Lower CV vs train expected with 50 real patients.",
+  "dataset_size": 50,
+  "balanced_size": 90,
+  "cv_results": {
+    "LogisticRegression": {
+      "accuracy": 0.8556,
+      "f1_score": 0.8454,
+      "f1_weighted": 0.8454
+    },
+    "DecisionTree": {
+      "accuracy": 0.8222,
+      "f1_score": 0.8113,
+      "f1_weighted": 0.8113
+    },
+    "RandomForest": {
+      "accuracy": 0.8222,
+      "f1_score": 0.8109,
+      "f1_weighted": 0.8109
+    },
+    "GradientBoosting": {
+      "accuracy": 0.9111,
+      "f1_score": 0.9083,
+      "f1_weighted": 0.9083
+    },
+    "HistGradientBoosting": {
+      "accuracy": 0.8556,
+      "f1_score": 0.8452,
+      "f1_weighted": 0.8452
+    },
+    "Ensemble (RF+GB+LR)": {
+      "accuracy": 0.8778,
+      "f1_score": 0.8677,
+      "f1_weighted": 0.8677
+    }
+  },
+  "classification_report": {
+    "High": {
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1-score": 0.967741935483871,
+      "support": 30.0
+    },
+    "Low": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.9285714285714286,
+      "support": 15.0
+    },
+    "Medium": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "accuracy": 0.96,
+    "macro avg": {
+      "precision": 0.9791666666666666,
+      "recall": 0.9555555555555556,
+      "f1-score": 0.9654377880184333,
+      "support": 50.0
+    },
+    "weighted avg": {
+      "precision": 0.9625,
+      "recall": 0.96,
+      "f1-score": 0.9592165898617512,
+      "support": 50.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      30,
+      0,
+      0
+    ],
+    [
+      2,
+      13,
+      0
+    ],
+    [
+      0,
+      0,
+      5
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "feature_importances": [
+    {
+      "feature": "systolic_bp_mean",
+      "importance": 0.216
+    },
+    {
+      "feature": "spo2_std",
+      "importance": 0.14709
+    },
+    {
+      "feature": "spo2_min",
+      "importance": 0.095
+    },
+    {
+      "feature": "temperature_mean",
+      "importance": 0.08538
+    },
+    {
+      "feature": "heart_rate_mean",
+      "importance": 0.05977
+    },
+    {
+      "feature": "heart_rate_std",
+      "importance": 0.0519
+    },
+    {
+      "feature": "temperature_max",
+      "importance": 0.04261
+    },
+    {
+      "feature": "temperature_min",
+      "importance": 0.03267
+    },
+    {
+      "feature": "diastolic_bp_mean",
+      "importance": 0.02771
+    },
+    {
+      "feature": "diabetes",
+      "importance": 0.02749
+    },
+    {
+      "feature": "heart_rate_min",
+      "importance": 0.02733
+    },
+    {
+      "feature": "diastolic_bp_std",
+      "importance": 0.02627
+    },
+    {
+      "feature": "spo2_mean",
+      "importance": 0.02364
+    },
+    {
+      "feature": "temperature_std",
+      "importance": 0.02165
+    },
+    {
+      "feature": "weight_kg",
+      "importance": 0.02082
+    },
+    {
+      "feature": "bmi",
+      "importance": 0.01723
+    },
+    {
+      "feature": "age",
+      "importance": 0.01486
+    },
+    {
+      "feature": "diastolic_bp_min",
+      "importance": 0.01214
+    },
+    {
+      "feature": "spo2_max",
+      "importance": 0.00939
+    },
+    {
+      "feature": "diastolic_bp_max",
+      "importance": 0.00909
+    },
+    {
+      "feature": "heart_rate_max",
+      "importance": 0.00827
+    },
+    {
+      "feature": "systolic_bp_max",
+      "importance": 0.00807
+    },
+    {
+      "feature": "systolic_bp_min",
+      "importance": 0.00561
+    },
+    {
+      "feature": "systolic_bp_std",
+      "importance": 0.00532
+    },
+    {
+      "feature": "height_m",
+      "importance": 0.00449
+    },
+    {
+      "feature": "gender",
+      "importance": 0.00012
+    },
+    {
+      "feature": "smoking_status",
+      "importance": 8e-05
+    },
+    {
+      "feature": "hypertension",
+      "importance": 4e-05
+    }
+  ]
+}
