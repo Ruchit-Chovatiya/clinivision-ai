@@ -174,16 +174,6 @@ http://localhost:5173
 
 ---
 
-## 🌐 Application URLs
-
-| Service | URL | Description |
-|---|---|---|
-| 🌐 **Web Dashboard** | http://localhost:5173 | Main application |
-| ⚙️ **API Server** | http://127.0.0.1:8000 | FastAPI backend |
-| 📖 **API Docs** | http://127.0.0.1:8000/docs | Swagger UI (interactive) |
-
----
-
 ## 🤖 Machine Learning Details
 
 ### Dataset
